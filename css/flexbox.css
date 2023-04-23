@@ -1,0 +1,45 @@
+/* cabeçalho */
+.cabecalho__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+.cabecalho__pesquisar__item {
+    display: none;
+}
+
+.superior__secao__container {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow: scroll;
+
+    /* propriedade para aplicar espaçamento entre itens */
+    gap: 15px;
+}
+
+/* rodapé */
+.rodape__container {
+    display: flex;
+
+    /* duas propriedades para deixar em coluna e preencheer o espaço que estiver faltando */
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    /* Apenas uma propiedade para fazer a mesma coisa */
+    flex-flow: column wrap;
+}
+
+
+@media (min-width: 834px) {
+    .cabecalho__pesquisar__item {
+        display: block;
+    }
+
+    .rodape__container {
+        justify-content: space-between;
+    }
+}
